@@ -1,0 +1,118 @@
+.project-listing {
+    padding: 20px;
+    margin-left: 250px; /* Adjust this value based on your sidebar width */
+    overflow: hidden; /* Ensure no scrolling */
+    height: calc(100vh - 80px); /* Adjust to fit the viewport */
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px 8px 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .controls-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-icon {
+    margin-right: 10px;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    width: 200px;
+  }
+  
+  .priority-dropdown {
+    margin-left: 20px;
+    padding: 5px;
+  }
+  
+  .project-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-table th,
+  .project-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .project-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .date {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .start-btn, .action-btn {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .start-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .action-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .pagination button {
+    border: none;
+    background: none;
+    color: #0056b3;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  

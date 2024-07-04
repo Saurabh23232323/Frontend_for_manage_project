@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard {
+    text-align: center;
+    color: #333;
+}
+
+.header {
+    background: url('../../images/login-bg-1.svg') no-repeat center center;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+.stat {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.stat h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: #777;
+}
+
+.stat p {
+    font-size: 2rem;
+    margin: 10px 0 0;
+    color: #333;
+}
+
+.chart-container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h3 {
+    margin-bottom: 20px;
+}

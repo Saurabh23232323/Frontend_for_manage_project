@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+/* General App styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
-  flex-direction: column;
+}
+
+/* Main content styles */
+.main-content {
+  margin-left: 250px; /* Adjust based on sidebar width */
+  padding: 20px;
+  width: calc(100% - 250px); /* Ensure it fills the rest of the screen */
+  box-sizing: border-box;
+}
+
+/* Specific styles for different components */
+.dashboard {
+  text-align: center;
+  color: #333;
+}
+
+/* Add other component-specific styles as needed */
+
+/* Project listing specific styles */
+.project-listing {
+  padding: 20px;
+  overflow: hidden;
+  height: calc(100vh - 80px);
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px 8px 0 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+  margin-right: 10px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+.priority-dropdown {
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-table th,
+.project-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.project-table th {
+  background-color: #f2f2f2;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.start-btn,
+.action-btn {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.start-btn {
+  background-color: #4CAF50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.action-btn {
+  background-color: #f44336;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  border: none;
+  background: none;
+  color: #0056b3;
+  font-size: 20px;
+  margin: 0 10px;
+  cursor: pointer;
 }
